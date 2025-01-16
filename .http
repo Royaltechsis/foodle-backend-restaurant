@@ -1,0 +1,38 @@
+# Create Restaurant
+POST http://localhost:5000/api/restaurants
+Content-Type: application/json
+
+{
+  "name": "Buka Street",
+  "location": "Port Harcourt ",
+  "cuisine": "Nigerian ",
+  "rating": 4.5
+}
+
+###
+
+# Get All Restaurants
+GET http://localhost:5000/api/restaurants
+
+###
+
+# Get Single Restaurant
+GET http://localhost:5000/api/restaurants/{{restaurant_id}}
+
+###
+
+# Update Restaurant
+PUT http://localhost:5000/api/restaurants/{{restaurant_id}}
+Content-Type: application/json
+
+{
+  "name": "Updated Buka Strret ",
+  "location": "Port Harcourt",
+  "cuisine": "Nigerian",
+  "rating": 4.8
+}
+
+###
+
+# Delete Restaurant
+DELETE http://localhost:5000/api/restaurants/{{restaurant_id}}
